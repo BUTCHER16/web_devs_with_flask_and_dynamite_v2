@@ -6,15 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F.R.I.E.N.D.S</title>
+    <style>
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(50, 50, 50);
+            text-align: center;
+        }
+        #banner {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+        }
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(100, 100, 100);
+            text-align: center;
+        }
+        p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(70, 70, 70);
+        }
+        #container{
+            max-width: 720px;
+            margin:0 auto ;
+        }
+        .charac{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align:center;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Friends Series</h1>
-    <img src="http://127.0.0.1:5500/static/central_perk_main.jpg" height="320" >
-    <h2>About Friends</h2>
-    <p>Friends is a 90's Comedy TV show, based in Manhattan, about 6 friends who go through just about every life experience imaginable together; love, marriage, divorce, children, heartbreaks, fights, new jobs and job losses and all sorts of drama.</p>
+    <div id="container">
+        <h1>Friends Series</h1>
+        <img id="banner" src="http://127.0.0.1:5500/static/central_perk_main.jpg">
+        <h2>About Friends</h2>
+        <p class="body-text">Friends is a 90's Comedy TV show, based in Manhattan, about 6 friends who go through just about every life experience imaginable together; love, marriage, divorce, children, heartbreaks, fights, new jobs and job losses and all sorts of drama.</p>
 
-    <h2>Characters</h2>
-    <button>To view in Netflix</button>
+        <h2>Characters and Lines</h2>
+        <p class="charac"> Ross : “We were on a break!” <br>
+            Pheobe : “See? He’s her lobster.” <br>
+            Joey : “Joey doesn’t share food!” <br>
+            Monica : “Your little Harmonica is hammered.”
+            Chandler : “Hi, I’m Chandler. I make jokes when I’m uncomfortable.” <br>
+            Rachel : “Well, maybe I don’t need your money. Wait, wait, I said maybe!” <br>
+        </p>
+        <div style="text-align: center;">
+            <button>To view in Netflix</button>
+            <p> Copyright 2023, Ross Geller</p>
+        </div>
+    </div>
 
     
 </body>
