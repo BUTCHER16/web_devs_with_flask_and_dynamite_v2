@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,19 +23,15 @@
         <p>Friends is a 90's Comedy TV show, based in Manhattan, about 6 friends who go through just about every life experience imaginable together; love, marriage, divorce, children, heartbreaks, fights, new jobs and job losses and all sorts of drama.</p>
 
         <h2 class="text-center mt-4 mb-2">Characters and Lines</h2>
-        <p class="text-center mb-4"> Ross : “We were on a break!” <br>
-            Pheobe : “See? He’s her lobster.” <br>
-            Joey : “Joey doesn’t share food!” <br>
-            Monica : “Your little Harmonica is hammered.”<br>
-            Chandler : “Hi, I’m Chandler. I make jokes when I’m uncomfortable.” <br>
-            Rachel : “Well, maybe I don’t need your money. Wait, wait, I said maybe!” <br>
-        </p>
+        <div>
+            {% for charac in character %}
+                {% include 'character.html' %}
+            {% endfor %}
+        </div>
         <div class="text-center">
             <button class="btn btn-danger">To view in Netflix</button>
             <p> Copyright 2023, Ross Geller</p>
         </div>
     </div>
-
-    
 </body>
 </html>
