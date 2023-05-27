@@ -18,11 +18,11 @@
     
     <title>F.R.I.E.N.D.S</title>
 </head>
-<body>
-    <div class="container">
-        <h1 class="text-center mt-2 mb-4">Friends Series</h1>
+<body class="dropdown" data-bs-theme="light">
+    {% include 'nav.html' %}
+    <div class="container bg-dark-subtle border border-dark-subtle ">
         <img class="img-fluid" id="banner" src="http://127.0.0.1:5000/static/central_perk_main.jpg">
-        <h2 class="text-center mt-2 mb-3">About Friends</h2>
+        <h1 class="text-center mt-2 mb-4 ">Friends Series</h1>
         <p>Friends is a 90's Comedy TV show, based in Manhattan, about 6 friends who go through just about every life experience imaginable together; love, marriage, divorce, children, heartbreaks, fights, new jobs and job losses and all sorts of drama.</p>
 
         <h2 class="text-center mt-4 mb-2">Characters and Lines</h2>
@@ -32,9 +32,10 @@
             {% endfor %}
         </div>
         <div class="text-center">
-            <button class="btn btn-danger">To view in Netflix</button>
+            <a href="https://www.netflix.com/" class="btn btn-danger">To view in Netflix</a>
             <p> Copyright 2023, Ross Geller</p>
         </div>
     </div>
+    {% include 'footer.html' %}
 </body>
 </html>
